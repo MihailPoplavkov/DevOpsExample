@@ -1,0 +1,13 @@
+version: '3'
+services:
+        reader:
+                image: reader:latest
+                environment: 
+                        - WRITER_HOST=writer
+                depends_on: 
+                        - writer
+                ports:
+                        - 8081:8081
+        writer:
+                image: writer:latest
+

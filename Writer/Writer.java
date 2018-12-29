@@ -4,7 +4,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Writer {
-    private static byte[] data = "hello\n".getBytes();
+    private static byte[] data = "hello_v2\n".getBytes();
 
     public static void main(String[] args) throws IOException {
         ServerSocket ss = new ServerSocket(8080);
